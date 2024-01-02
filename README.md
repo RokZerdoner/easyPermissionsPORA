@@ -74,16 +74,17 @@ Apache Licenca verzija 2.0 :
 
 ## Kako vključiti v projekt
 
-Originalna (java) verzija:
-`dependencies {
+`// originalna verzija
+dependencies {
 // For developers using AndroidX in their applications
 implementation 'pub.devrel:easypermissions:3.0.0'
 
     // For developers using the Android Support Library
     implementation 'pub.devrel:easypermissions:2.0.1'
-}`
-Kotlin verzija:
-`dependencies {
+}
+
+//Kotlin verzija:
+dependencies {
 implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
 }`
 
