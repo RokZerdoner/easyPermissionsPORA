@@ -4,6 +4,7 @@
 
 Easy permissions je android knjižnica namenjena za hitro in enostavno spremljanje in obveščanje uporabnikom glede potrebnih dovoljenj, 
 ki jih Vaša aplikacija nujno potrebuje za delovanje. 
+Link na njihov repozitorij: [java verzija](https://github.com/googlesamples/easypermissions), ali pa [kotlin verzija](https://github.com/VMadalin/easypermissions-ktx?tab=readme-ov-file)
 
 ---
 
@@ -35,27 +36,6 @@ enostavne za implementirati in zelo koristne v splošnem za vsako malo kompleksn
 | uvoziti je potrebno samo eno knjižnico                                                                  |                                                                                                                                                                                                |
 | verzija knjižnice tako za programski jezik Java, kot tudi za Kotlin                                     |                                                                                                                                                                                                |
 
-## Glavne prednosti
-
-- Enostavnost uporabe
-- Uporabniku lahko prikaže vsa dovoljenja, ki jih želimo naenkrat
-- Enostavno lahko preverimo, če so dovoljenja omogočena
-- Izpiše lahko obvestilo, če katero izmed dovoljenj, ki so nujno potrebna za delovanje, ni bilo omogočeno
-- uporabnika lahko preusmeri na stran aplikacije znotraj nastavitev
-- hkrati lahko preverjamo za več dovoljenj
-- prilagodimo si lahko izgled sporočila
-- uvoziti je potrebno samo eno knjižnico
-- verzija knjižnice tako za programski jezik Java, kot tudi za Kotlin
-
----
-
-## Glavne slabosti
-
-- Uporablja se lahko le za android OS, ki so večji ali enaki verziji M (Marshmallow) - Android 6
-- ne more točno razlikovati med "dovoljenja onemogočena za vedno" in "dovoljenja onemogočena", dokler najprej niso bila onemogočena in šele nato onemogočena za vedno
-  (omejen s strani Androida)
-- nekaj let že ni bila posodobljena
-
 ---
 
 ## Statistika podaktov iz repozitorija
@@ -70,6 +50,42 @@ enostavne za implementirati in zelo koristne v splošnem za vsako malo kompleksn
 - Java verzija je 185. na Android Weekly, Kotlin verzija pa 446.
 - Java verzija ima 184 commitov, Kotlin pa 192 (pri čemer izvira iz Java knjižnice)
 - Vsega skupaj je 17 vej in ima 9.8 zvezdic na Github-u
+
+---
+
+## Alternative
+
+| Ime knjižnice         | Link                                                                    |
+|-----------------------|-------------------------------------------------------------------------|
+| PermissionsDispatcher | [link](https://github.com/permissions-dispatcher/PermissionsDispatcher) |
+| RxPermissions         | [link](https://github.com/tbruyelle/RxPermissions)                      |
+
+---
+
+## Licenca
+
+Apache Licenca verzija 2.0 :
+- odprtokodna licenca
+- modifikacija kode
+- komercialna uporaba spremenjene ali originalne verzije kode
+- potrebna atribucija te knjižnice
+
+---
+
+## Kako vključiti v projekt
+
+Originalna (java) verzija:
+`dependencies {
+// For developers using AndroidX in their applications
+implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // For developers using the Android Support Library
+    implementation 'pub.devrel:easypermissions:2.0.1'
+}`
+Kotlin verzija:
+`dependencies {
+implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+}`
 
 ---
 
