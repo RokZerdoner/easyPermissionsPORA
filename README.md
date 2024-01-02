@@ -74,7 +74,8 @@ Apache Licenca verzija 2.0 :
 
 ## Kako vključiti v projekt
 
-`// originalna verzija
+`
+// originalna verzija
 dependencies {
 // For developers using AndroidX in their applications
 implementation 'pub.devrel:easypermissions:3.0.0'

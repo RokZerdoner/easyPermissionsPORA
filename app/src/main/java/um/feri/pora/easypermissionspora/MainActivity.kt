@@ -1,6 +1,7 @@
 package um.feri.pora.easypermissionspora
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,15 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks, E
         const val PERMISSION_DIFFERENT_REQUESTS_CODE = 1
         const val SETTINGS_REQ_CODE = 2
     }
+    object PermissionHelper {
+        fun checkPermissions(context: Context): Boolean {
+            return EasyPermissions.hasPermissions(
+                context,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            )
+        }
+    }
 
 
     lateinit var binding: ActivityMainBinding
@@ -38,6 +48,10 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks, E
 
             val request = buildPermissionRequest()
             EasyPermissions.requestPermissions(this, request)
+        }
+        binding.button.setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
         }
     }
 
