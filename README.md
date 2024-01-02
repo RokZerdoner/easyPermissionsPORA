@@ -23,6 +23,17 @@ enostavne za implementirati in zelo koristne v splošnem za vsako malo kompleksn
 - omogočeno je prilaganje izgleda z dovoljenji
 
 ---
+## Prednosti/ Slabosti
+| Glavne prednosti                                                                                        | Glavne slabosti                                                                                                                                                                                |
+|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enostavnost uporabe                                                                                     | Uporablja se lahko le za android OS, ki so večji ali enaki verziji M (Marshmallow) - Android 6                                                                                                 |
+| Uporabniku lahko prikaže vsa dovoljenja, ki jih želimo naenkrat                                         | ne more točno razlikovati med "dovoljenja onemogočena za vedno" in "dovoljenja onemogočena", dokler najprej niso bila onemogočena in šele nato onemogočena za vedno (omejen s strani Androida) |
+| Izpiše lahko obvestilo, če katero izmed dovoljenj, ki so nujno potrebna za delovanje, ni bilo omogočeno | nekaj let že ni bila posodobljena                                                                                                                                                              |
+| uporabnika lahko preusmeri na stran aplikacije znotraj nastavitev                                       |                                                                                                                                                                                                |
+| hkrati lahko preverjamo za več dovoljenj                                                                |                                                                                                                                                                                                |
+| prilagodimo si lahko izgled sporočila                                                                   |                                                                                                                                                                                                |
+| uvoziti je potrebno samo eno knjižnico                                                                  |                                                                                                                                                                                                |
+| verzija knjižnice tako za programski jezik Java, kot tudi za Kotlin                                     |                                                                                                                                                                                                |
 
 ## Glavne prednosti
 
