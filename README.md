@@ -103,3 +103,11 @@ implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
 
 ![Slika 5](/images/img_5.PNG)
 
+
+
+
+## Vključitev v projekt
+![Slika 6](/images/img_6.PNG)
+
+![Slika 7](/images/img_7.PNG)
+
